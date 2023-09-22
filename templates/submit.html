@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>LLM</title>
+</head>
+<body>
+    <div>
+        <div class="logo">
+            <a href='/'><img src="#"></a>
+        </div>
+        <div class="head">
+            <h1 class="heading">Some Tacky Name</h1>
+            <h3>Some tacky moto</h3>
+        </div> 
+        {% if output %}
+        <div class="output"><span id="span">{{output}}</span></div>      
+        {% endif %} 
+    </div>
+    <script src="/static/index.js"></script>
+</body>
+</html>

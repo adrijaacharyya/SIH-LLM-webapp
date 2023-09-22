@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Public+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Public+Sans:wght@700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mooli&family=Public+Sans:wght@700&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>LLM</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src="#">
+        </div>
+        <div class="head">
+            <h1 class="heading">Some Tacky Name</h1>
+            <h3>Some tacky moto</h3>
+        </div>
+        <div class="container">
+            <div class="left-div">
+                <h2>Put Text to Summarize</h2>
+                <h4>Summarize Anything and Everything</h3>
+                <div class="card">
+                    <div class="content">
+                        <input type="radio" name="rd" value="star" id="one">
+                        <input type="radio" name="rd" value="ring" id="two">
+                        <input type="radio" name="rd" value="bus" id="three">
+                        <label for="one" class="box first">
+                            <div class="plan">
+                                <span class="circle"></span>
+                                <span class="yearly">Summarize</span>
+                            </div>
+                        </label>
+                        <label for="two" class="box second">
+                            <div class="plan">
+                                <span class="circle"></span>
+                                <span class="yearly">Reformat</span>
+                            </div>
+                        </label>
+                        <label for="three" class="box third">
+                            <div class="plan">
+                            <span class="circle"></span>
+                            <span class="yearly">Grammar Check</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="right-div">
+                <form id="textbox" method="post">
+                    <textarea type="text" name="inputtext" for="inputtext" placeholder="Enter your text here" required></textarea>
+                    <a href=submit><button type="submit" class="submit">SUBMIT</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="/static/index.js"></script>
+</body>
+</html>

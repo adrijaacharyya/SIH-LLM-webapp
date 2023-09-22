@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    background-color: #fbfbfb;
+}
+
+.heading {
+    color: #f6b311;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 0;
+    padding-bottom: 2%;
+}
+h4, h3 {
+    margin-top: 0;
+    font-weight: 50;
+}
+.head {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: start;
+}
+.left-div {
+    color: #fff;
+    background-color: #011c2a ;
+    flex: 1;
+    margin: 5%;
+    padding: 0 4%;
+    height: 400px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mooli', sans-serif;
+    
+}
+
+.right-div {
+    flex: 2;
+    margin: 5%;
+    padding-right: 4%;
+}
+textarea {
+    width: 100%;
+    background-color: #d9d9d9;
+    color: #000;
+    border: none;
+    box-sizing: content-box;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.submit {
+    margin: 20% 50% 0 40%;
+    background-color: #011c2a;
+    color: #fafafa;
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+
+}
+
+::placeholder {
+    color: #000;
+    text-align: center;
+    padding-top: 95px;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.card{
+    max-width: 350px;
+    width: 70%;
+    margin: 10px;
+    background: #aaaaaa;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+.card .title{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content{
+  margin-top: 10px;
+}
+.card  label.box{
+  background: #ddd;
+  margin-top: 10px;
+  padding: 10px 12px;
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#one:checked ~ label.first,
+#two:checked ~ label.second,
+#three:checked ~ label.third{
+  border-color: #2C3333;
+  background: #f6b311;
+}
+.card  label.box:hover{
+  background: #f6b311;
+}
+.card  label.box .circle{
+  height: 12px;
+  width: 12px;
+  background: #ccc;
+  border: 5px solid transparent;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.2);
+}
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle,
+#three:checked ~ label.third .circle{
+  border-color: #2C3333;
+  background: #fff;
+}
+.card  label.box .plan{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.card input[type="radio"]{
+  display: none;
+}
+
+.output{
+    background-color: #d9d9d9;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+  
+  border: none;
+  padding: 10px;
+}
