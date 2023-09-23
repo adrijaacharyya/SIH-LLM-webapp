@@ -17,7 +17,8 @@ const handleSubmit = (e) => {
     if (selectedTask === 'summarize') {
         let text = typeOfText.value;
         model = text;
-    } else {
+    } 
+    if (selectedTask === 'grammar') {
         model = selectedTask;
     }
     const req = new XMLHttpRequest();
