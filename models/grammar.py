@@ -18,6 +18,8 @@ class grammar:
         translated = self.model.generate(**batch,max_length=64,num_beams=self.num_beams, num_return_sequences=self.num_return_sequences, temperature=1.5)
         tgt_text = self.tokenizer.batch_decode(translated, skip_special_tokens=True)
         output_str = ''
+        j = 1
         for i in tgt_text:
-            output_str = output_str+i+'\n'
+            output_str += f'{j}. {i}\n'
+            j += 1
         return output_str
