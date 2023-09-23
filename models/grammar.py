@@ -17,8 +17,4 @@ class grammar:
         batch = self.tokenizer([self.input_text],truncation=True,padding='max_length',max_length=64, return_tensors="pt").to(self.torch_device)
         translated = self.model.generate(**batch,max_length=64,num_beams=self.num_beams, num_return_sequences=self.num_return_sequences, temperature=1.5)
         tgt_text = self.tokenizer.batch_decode(translated, skip_special_tokens=True)
-        output_str = ''
-        for i in tgt_text:
-            output_str = output_str+i+'\n'
-        return output_str
-
+        return tgt_text

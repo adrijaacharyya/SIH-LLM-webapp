@@ -155,3 +155,12 @@ textarea {
   display: none;
 }
 
+.feedback {
+  float: right;
+}
+
+.selected {
+  background-color: #f6b311; /* Change the background color as desired */
+  color: #fff; /* Change the text color as desired */
+  /* Add any other styling you want for the selected button */
+}
