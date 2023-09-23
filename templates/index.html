@@ -27,21 +27,15 @@
                 <h4>Summarize Anything and Everything</h3>
                 <div class="card">
                     <div class="content">
-                        <input type="radio" name="rd" value="star" id="one">
-                        <input type="radio" name="rd" value="ring" id="two">
-                        <input type="radio" name="rd" value="bus" id="three">
+                        <input type="radio" name="rd" value="summarize" id="one">
+                        <input type="radio" name="rd" value="grammar" id="three">
                         <label for="one" class="box first">
                             <div class="plan">
                                 <span class="circle"></span>
                                 <span class="yearly">Summarize</span>
                             </div>
                         </label>
-                        <label for="two" class="box second">
-                            <div class="plan">
-                                <span class="circle"></span>
-                                <span class="yearly">Reformat</span>
-                            </div>
-                        </label>
+                        
                         <label for="three" class="box third">
                             <div class="plan">
                             <span class="circle"></span>
@@ -50,6 +44,19 @@
                         </label>
                     </div>
                 </div>
+                <div class="sum-more">
+                    <form action="/">
+                        <label for="type">Choose the type of article:</label>
+                        <br>
+                        <select name="type" id="type">
+                            <option value="news">News</option>
+                            <option value="science">Scientific</option>
+                            <option value="misc">Arbitrary</option>
+                        </select>
+                        <br>
+                      </form>
+                </div>
+                
             </div>
             <div class="right-div">
                 <form id="textbox" method="post">

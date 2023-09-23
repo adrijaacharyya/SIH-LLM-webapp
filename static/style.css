@@ -144,3 +144,14 @@ textarea {
   padding: 10px;
 }
 
+.sum-more {
+  max-width: 350px;
+  width: 70%;
+  margin: 10px;
+  background: #aaaaaa;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
