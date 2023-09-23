@@ -51,3 +51,20 @@ const handleClick = (e) => {
     speechSynthesis.speak(speech);
 }
 btn.addEventListener('click', handleClick);
+
+
+//feedback
+
+const buttons = document.querySelectorAll(".fa-button");
+
+buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        // Remove the 'selected' class from all buttons
+        buttons.forEach(function(btn) {
+            btn.classList.remove("selected");
+        });
+
+        // Add the 'selected' class to the clicked button
+        button.classList.add("selected");
+    });
+});
