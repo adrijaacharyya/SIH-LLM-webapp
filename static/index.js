@@ -1,9 +1,10 @@
 submit = document.querySelector('.submit');
 list = document.querySelector('.sum-more');
+typeOfText = document.getElementById('type');
 
 tasks = document.getElementsByName('rd');
 let selectedTask;
-
+let model;
 
 
 const handleSubmit = (e) => {
@@ -13,7 +14,15 @@ const handleSubmit = (e) => {
             break;
         }
     }
-    
+    if (selectedTask === 'summarize') {
+        let text = typeOfText.value;
+        model = text;
+    } else {
+        model = selectedTask;
+    }
+    const req = new XMLHttpRequest();
+    req.open('POST',`/ProcessModel/${JSON.stringify(model)}`)
+    req.send();
 }
 
 tasks.forEach(function(input) {
