@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>LLM</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
 </head>
 <body>
     <div>
         <div class="logo">
-            <a href='/'><img src="#"></a>
+            <a href='/'><img src="static\Briefify.png" height="100" width="100"></a>
         </div>
         <div class="head">
-            <h1 class="heading">Some Tacky Name</h1>
-            <h3>Some tacky moto</h3>
+            <h1 class="heading">Briefify</h1>
+            <h3>Distilling Complexity, Delivering Clarity</h3>
         </div> 
         {% if output %}
         <div class="output"><span id="span">{{output}}</span></div>      

@@ -73,3 +73,21 @@ class BartModel:
 
         # Print the generated summary
         return generated_summary
+    
+
+input_text = '''Canadian Prime Minister Justin Trudeau has said that the shared evidence that Indian government agents were potentially involved in the murder of a Sikh separatist leader in British Columbia with New Delhi weeks ago.
+
+Trudeau added, "We are there to work constructively with India. We hope that they engage with us so that we can get to the bottom of this very serious matter".
+
+Earlier this week, the Canadian Prime Minister said they had credible intelligence linking Indian government agents to the murder in June of Khalistani separatist Hardeep Singh Nijjar.
+
+Trudeau said the intelligence included communications of Indian officials present in Canada, adding that some of the information was provided by an unidentified ally in the Five Eyes alliance.
+
+Five Eyes is an intelligence-sharing network that includes the US, the UK, Canada, Australia and New Zealand.
+
+However, Trudeau has not provided any details about what Canada's spy agencies have collected.
+
+Meanwhile, US Secretary of State Antony Blinken said the United States wanted to see "accountability" over the killing.'''
+
+br = BartModel(input_text)
+print(br.output())
