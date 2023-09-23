@@ -2,8 +2,8 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 class t5model:
     def __init__(self,paper_text):
-        self.tokenizer = AutoTokenizer.from_pretrained("pszemraj/long-t5-tglobal-base-sci-simplify")
-        self.model = AutoModelForSeq2SeqLM.from_pretrained("pszemraj/long-t5-tglobal-base-sci-simplify")
+        self.tokenizer = AutoTokenizer.from_pretrained("t5-small")
+        self.model = AutoModelForSeq2SeqLM.from_pretrained("t5-small")
         self.paper_text = paper_text
     def output(self):
         # Tokenize the input paper
