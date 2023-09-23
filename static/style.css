@@ -7,6 +7,11 @@ body {
     color: #f6b311;
     margin: 0;
 }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
 h2 {
     margin-bottom: 0;
     padding-bottom: 2%;
@@ -17,6 +22,7 @@ h4, h3 {
 }
 .head {
     text-align: center;
+    flex: 2;
 }
 .container {
     display: flex;
