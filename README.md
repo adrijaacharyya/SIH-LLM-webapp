@@ -24,7 +24,7 @@ To run Briefyfy locally, follow these installation instructions:
 5. **Install Libraries:**
 ```bash
    python app.py
-
+```
 ## Contact
 For any questions or concerns, please contact Adrija at [adrija26acharyya@gmail.com].
 
