@@ -25,4 +25,13 @@ To run Briefyfy locally, follow these installation instructions:
 ```bash
    python app.py
 
+## Contact
+For any questions or concerns, please contact Adrija at [adrija26acharyya@gmail.com].
+
+## Acknowledgement
+Briefyfy acknowledges the contributions of the open-source community, particularly the developers of the transformers and summarizer libraries, for making this project possible.
+
+
+
+
    
