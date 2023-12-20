@@ -21,7 +21,7 @@ To run Briefyfy locally, follow these installation instructions:
    ```bash
    pip install transformers
    pip install summarizer
-5. **Install Libraries:**
+5. **Usage:**
 ```bash
    python app.py
 ```
