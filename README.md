@@ -15,3 +15,14 @@ To run Briefyfy locally, follow these installation instructions:
 2. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
+3. **Install PyTorch and SentencePiece:**
+   Visit PyTorch and SentencePiece websites for installation instructions based on your system.
+4. **Install Libraries:**
+   ```bash
+   pip install transformers
+   pip install summarizer
+5. **Install Libraries:**
+```bash
+   python app.py
+
+   
